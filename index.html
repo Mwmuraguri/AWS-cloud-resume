@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="cloud.jpg" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Maryanne Ngaruiya</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="layout.css">
+   <link rel="stylesheet" href="media-queries.css">
+   <link rel="stylesheet" href="magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="assets/modernizr.js"></script>
+
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+
+</head>
+
+<body>
+
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #navxx-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Maryanne Wanjiku Ngaruiya</h1>
+            <h3>Welcome to My Professional Hub</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.linkedin.com/in/maryanne-ngaruiya" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.github.com/Mwmuraguri" target="_blank"><i class="fa fa-github"></i></a></li>     
+            </ul>
+         </div>
+         <div class="counter-number"></div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="assets/me.jpg" alt="" />
+
+         </div>
+
+
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>Hello there! I'm Maryanne, a passionate software engineer and dedicated cloud practitioner based in the beautiful landscapes of Kenya.
+                My journey in the world of technology has been nothing short of exhilarating, filled with challenges, growth, and a deep love for turning ideas into innovative solutions.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Maryanne Ngaruiya</span><br>
+						   <span>+254794746395</span><br>
+                     <span>ngaruiyamaryannewanjiku@gmail.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                    <a href="https://docs.google.com/" class="button" onclick="sendNotification()"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script>
+                  function sendNotification() {
+                    // Make an AJAX request to the Lambda function URL
+                    $.ajax({
+                      url: 'https://kxtuktrcwdngfktcpdeungxrji0fkkut.lambda-url.us-east-1.on.aws',
+                      type: 'POST',
+                      success: function(response) {
+                        // Handle the success response
+                        console.log(response);
+                      },
+                      error: function(error) {
+                        // Handle the error response
+                        console.error(error);
+                      }
+                    });
+                  }
+                </script>
+                
+
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section
+             
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+     
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="assets/jquery.flexslider.js"></script>
+   <script src="assets/waypoints.js"></script>
+   <script src="assets/jquery.fittext.js"></script>
+   <script src="Assets/magnific-popup.js"></script>
+   <script src="assets/init.js"></script>
+   <script src="assets/index.js"></script>
+
+</body>
+
+</html>
